@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Page</title>
+  <link rel="stylesheet" href="./src/output.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+ <main>
+  <!-- Desktop View  -->
+  <header>
+    <section class=" flex lg:ml-[5.31rem] ml-[1.8rem] justify-between items-center mt-[3.94rem] mr-[5.63rem]">
+          <img src="./images/log0.svg" alt="Speakup-logo" class="lg:w-[14rem] mt-[2.5rem] lg:mt-0 fixed lg:static w-[9.6rem] lg:h-[4.06rem] h-[2.5rem]">
+      <div> 
+        <ul class="list-none lg:flex hidden gap-[3.97rem] my-[1.58rem] font-[400] text-[1.13rem] leading-5 text-[#000000]">
+          <li>
+            <a class="hover:font-extrabold hover:text-black" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="hover:font-extrabold hover:text-black" href="about.html">About Us</a>
+          </li>
+          <li>
+            <a class="hover:font-extrabold hover:text-black" href="resources.html">Resources</a>
+          </li>
+        </ul>
+      </div>
+      <div class="lg:flex hidden">
+      <a href="report page.html"><button class=" bg-[#537BE1] py-[1rem] px-[1.5rem] text-[#FFFFFF] rounded-[5.63rem] hover:text-black">Report Now</button></a>
+      </div>
+    </section>
+</header>
+<!-- mobile view -->
+<ul class="menu lg:hidden block list-none my-[1.58rem] font-[400] text-[1.13rem] leading-5 text-[#000000]">
+  <li class="mt-1">
+    <a class="hover:font-extrabold hover:text-black" href="index.html">Home</a>
+  </li>
+  <li class="mt-1">
+    <a class="hover:font-extrabold hover:text-black" href="about.html">About Us</a>
+  </li>
+  <li class="mt-1">
+    <a class="hover:font-extrabold hover:text-black" href="resources.html">Resources</a>
+  </li>
+  <li class="mt-1">
+    <a  class="hover:font-extrabold hover:text-black"  href="report page.html">Report Now</a>
+  </li>
+</ul>
+<button class="hamburger lg:hidden block">
+  <img src="./pictures/menu.svg" alt="menu icon" class="menu-icon">
+  <img src="./pictures/close.svg" alt="close icon" class="close-icon">
+</button>
+
+  <section class="font-[700] lg:text-[2.5rem] text-[1.24rem] lg:leading-10 leading-[1.50rem] text-[#232323] lg:mt-[2.99rem] mt-[4.80rem] lg:ml-[5.69rem] ml-[1.55rem] mb-[4.38rem]">
+    <p>Report Anonymously</p>
+  </section>
+
+  <section class="w-[100vw] lg:h-[17.5rem] h-[11.87rem] bg-[#022253] lg:mt-[4.44rem] mt-[1.42rem] rounded-[1.88rem] mx-0">
+    <p class="font-[700] text-[#FFFFFF] lg:text-[1.4rem] text-[0.87rem] lg:pt-[3.69rem] pt-[1.49rem] lg:ml-[3.75rem] ml-[0.87rem] lg:leading-7 leading-[1.05rem]">Please use this form to submit an anonymous report of sexual and gender-based violence (SGBV). <br>Your identity will remain confidential, and your safety is 100% guaranteed.</p>
+    <p class="lg:mt-[3rem] mt-[2rem] lg:ml-[3.75rem] ml-[0.87rem] lg:text-[1.33rem] text-[0.62rem] font-[400] leading-[0.95] text-[#FFFFFF]">Be an anonymous hero. Reporting abuse silently doesn't diminish your bravery; it amplifies it. <br> Your action might be the catalyst for change.</p>
+  </section>
+
+  <!-- Form Section  -->
+  <section class="lg:mt-[3.69rem] mt-[1.37rem] bg-[#EEEDED]">
+    <form action="/submit-report" method="POST">
+      <!-- Personal Information -->
+      <label for="name" class="lg:ml-[7.5rem] ml-[1.24rem] lg:mt-[8.20] pt-[3.20] lg:text-[1.75rem] text-[1rem] font-[400] lg:leading-[2.12rem] leading-[0.90rem]">Your Name (optional):</label>
+      <input type="text" id="name" name="name" class="lg:w-[43.56rem] w-[16rem] lg:h-[4.5rem] h-[6.09rem] bg-[#F8F7F7] lg:ml-[4.20rem] ml-[1.44rem] lg:pl-[2rem] pl-[1rem] lg:mt-10 mt-[1.62rem] lg:mr-0 mr-[1.93rem]">
+      <!-- Incident Information --> 
+      <div class="">
+        <!-- Date of Incident -->
+        <div class="mt-[3.69rem] mx-0">
+          <label for="date" class="lg:ml-[7.7rem] ml-[1.27rem] lg:text-[1.75rem] text-[1rem] font-[400] lg:leading-[2.12rem] leading-[0.90rem]">Date of Incident:</label>
+          <input type="date" id="date" name="date" class="lg:w-[43.56rem] w-[16rem] lg:h-[4.5rem] h-[6.09rem] bg-[#F8F7F7] lg:ml-[8.20rem] ml-[4.10rem] lg:pl-[2rem] pl-[1rem] lg:pr-[1rem] pr-[1rem]" required>
+        </div>
+        <!-- Time of Incident -->
+        <div class="mt-[3.69rem]">
+          <label for="time" class="lg:ml-[7.7rem] ml-[1.27rem] lg:text-[1.75rem] text-[1rem] font-[400] lg:leading-[2.12rem] leading-[0.90rem]">Time of Incident:</label>
+          <input type="time" id="time" name="time" class="lg:w-[43.56rem] w-[16rem] lg:h-[4.5rem] h-[6.09rem] bg-[#F8F7F7] lg:ml-[8.20rem] ml-[4.10rem] lg:pl-[2rem] pl-[1rem] lg:pr-[1rem] pr-[1rem]" required>
+        </div>
+        <!-- Type of Violence -->
+        <div class="mt-[3.69rem]">
+          <label for="violenceType" class="lg:ml-[7.5rem] ml-[1.27rem] lg:text-[1.75rem] text-[1rem] font-[400] lg:leading-[2.12rem] leading-[0.90rem]">Type of Violence:</label>
+          <select id="violenceType" name="violenceType" class="lg:w-[43.56rem] w-[16rem] lg:h-[4.5rem] h-[6.09rem] bg-[#F8F7F7] lg:ml-[7.88rem] ml-[3.88rem] lg:pl-[2rem] pl-[1rem] lg:pr-[1rem] pr-[1rem]" required>
+            <option value="select an option">Select an option</option>
+            <option value="sexualAssault">Sexual Assault</option>
+            <option value="domesticViolence">Domestic Violence</option>
+            <option value="harassment">Harassment</option>
+            <option value="other">Other (please specify)</option>
+          </select>
+          <input type="text" id="otherViolenceTypeInput" name="otherViolenceType" class="w-[43.56rem] h-[4.5rem] bg-[#F8F7F7] ml-[28.60rem] pl-[2rem] mt-[1rem] hidden" placeholder="Kindly Specify Other">
+        </div>
+        <!-- Location of Incident -->
+        <div class="mt-[3.69rem]">
+          <label for="location" class="lg:ml-[7.5rem] ml-[1.24rem] lg:text-[1.75rem] text-[1rem] font-[400] lg:leading-[2.12rem] leading-[0.90rem]">Location of Incident:</label>
+          <input type="text" id="location" name="location" class="lg:w-[43.56rem] w-[16rem] lg:h-[4.5rem] h-[6.09rem] bg-[#F8F7F7] lg:ml-[5.20rem] ml-[2.50rem] lg:pl-[2rem] pl-[1rem]" required>
+        </div>
+        <!-- Perpetrator description -->
+        <div class="mt-[3.69rem]">
+          <label for="perpetrator" class="lg:ml-[7.5rem] ml-[1.24rem] mt-[0.81rem] lg:text-[1.75rem] text-[1rem] font-[400] lg:leading-[2.12rem] leading-[0.90rem]">Perpetrator Description (if known):</label>
+          <input type="text" id="perpetrator" name="perpetrator" class="lg:w-[65rem] w-[27.85rem] h-[10.25rem] bg-[#F8F7F7] mt-[1.20rem] lg:ml-[7.55rem] ml-[1.24rem] pl-[2rem]">
+        </div>
+        <!-- Witnesses -->
+        <div class="mt-[3.69rem]">
+          <label for="witnesses" class="lg:ml-[7.5rem] ml-[1.24rem] mt-[1.20rem] lg:text-[1.75rem] text-[1rem] font-[400] lg:leading-[2.12rem] leading-[0.90rem]">Witnesses (if any, please details):</label>
+          <textarea id="witnesses" name="witnesses" rows="4" class="lg:w-[65rem] w-[27.85rem] h-[10.25rem] bg-[#F8F7F7] mt-[1.20rem] lg:ml-[7.55rem] ml-[1.24rem] pl-[2rem] pt-[1.5rem]"></textarea>
+        </div>
+        <!-- Description of Incident -->
+        <div class="mt-[3.69rem]">
+          <label for="description" class="lg:ml-[7.5rem] ml-[1.24rem] mt-[1.20rem] lg:text-[1.75rem] text-[1rem] font-[400] lg:leading-[2.12rem] leading-[0.90rem]">Description of Incident:</label>
+          <textarea id="description" name="description" rows="4" class="lg:w-[65rem] w-[27.85rem] h-[10.25rem] bg-[#F8F7F7] mt-[1.20rem] lg:ml-[7.55rem] ml-[1.24rem] pl-[2rem] pt-[1.5rem]"></textarea>
+        </div>
+        <!-- Additional Information -->
+        <div class="mt-[3.69rem]">
+          <label for="additionalInfo" class="lg:ml-[7.5rem] ml-[1.24rem] mt-[1.20rem] lg:text-[1.75rem] text-[1rem] font-[400] lg:leading-[2.12rem] leading-[0.90rem]">Additional Information:</label>
+          <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Add any other information you want us to know" class="lg:w-[65rem] w-[27.85rem] h-[10.25rem] bg-[#F8F7F7] mt-[1.20rem] lg:ml-[7.55rem] ml-[1.24rem] pl-[2rem] pt-[3rem]"></textarea>
+        </div>
+      </div>
+      <!-- Agreement Section  -->
+      <div class="mt-4 lg:ml-[5.45rem] flex">
+        <label for="agreement" class="block text-sm font-medium text-gray-600">
+          <input type="checkbox" id="agreement" name="agreement" required class="lg:ml-[2rem] ml-[1.37rem] mt-[1.25rem]">
+        </label>
+        <p class="mt-[1.20rem] pl-[0.50rem] leading-4">By submitting this form, you acknowledge that the information provided is true to the best of your knowledge. <br> Your report will be handled with the utmost confidentiality, and only authorized personnel will have access to the information provided.</p>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" onclick="showAlert()" class=" bg-[#537BE1] hover:bg-[#022253] py-[1rem] px-[1.5rem] text-[#FFFFFF] rounded-[5.63rem] lg:ml-[36.25rem] mx-[10rem] lg:mt-[3rem] mt-[3rem] mb-[3rem]">Submit Report</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <section class="bg-[#022253] w-[80rem] h-[40.69rem] mt-[11.38rem] mx-[0]">
+    <div class="flex">
+      <div>
+        <div class="ml-[6.62rem] pt-[4.75rem]"><img src="images/footerlogo.svg" alt="Speakup-logo"></div>
+        <p class="text-[#FFFFFF] mt-[1.93rem] ml-[5.93rem] font-[400] text-[0.87rem] leading-4">Your safe Haven for Reporting Incidents of Sexual <br>and Gender-Based Violence</p>
+      </div>
+      <div class="ml-[8.37rem] mt-[7.62rem]">
+        <h2 class="text-[#FFFFFF] font-[400] text-[1.25rem] leading-6">Phone Number</h2>
+        <div class="text-[#FFFFFF] mt-[0.62rem] text-[0.87rem] font-[400] leading-6">
+          <p>+2347032758203, +2348143869939 </p>
+          <p>+2349020049105, +2347014604111 </p>
+        </div>
+      </div>
+
+    <div class="ml-[8rem] mt-[7.62rem] h-[10.38rem] w-[5.63rem]">
+      <p class="text-[#FFFFFF] font-[400] text-[1.25rem] leading-6">Company</p>
+      <ul class="text-[#FFFFFF] font-[400] text-[0.87rem] leading-9 mt-[0.94rem]">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="flex">
+    <div class="mt-[2.88rem] ml-[6.31rem] flex">
+      <div class="bg-[#FFFFFF] w-[2.5rem] h-[2.5rem] rounded-[18.75rem] ml-[0.62rem]">
+        <a target="_blank" href="https://x.com/webfalainitiat1"><img src="images/X.svg" alt="X-logo"></a>
+      </div>
+      <div class="bg-[#FFFFFF] w-[2.5rem] h-[2.5rem] rounded-[18.75rem] ml-[0.62rem]">
+        <a target="_blank" href="https://www.facebook.com/webfalainitiative?mibextid=LQQJ4d"><img src="images/fb.svg" alt="Facebook-logo"></a>
+      </div>
+      <div class="bg-[#FFFFFF] w-[2.5rem] h-[2.5rem] rounded-[18.75rem] ml-[0.62rem]">
+        <a target="_blank" href="https://whatsapp.com/channel/0029Va918fSJJhzTUTdFsp1q"><img src="images/whatsapp.svg" alt="whatsapp-logo"></a>
+      </div>
+      <div class="bg-[#FFFFFF] w-[2.5rem] h-[2.5rem] rounded-[18.75rem] ml-[0.62rem]">
+        <a target="_blank" href="https://www.instagram.com/webfalainitiative?igsh=MzRIODBiNWFIZA=="><img src="images/instagram.svg" alt=""></a>
+      </div>
+    </div>
+    
+
+    <div class="ml-[15rem] mt-[1.68rem]">
+      <p class="text-[#FFFFFF] font-[400] text-[1.25rem] leading-6">Address</p>
+      <p class="mt-[0.62rem] font-[400] text-[0.87rem] leading-6 text-[#FFFFFF]">The City of Refugee; No 14, Station <br>Road, Along Royalton Hotel, GRA, Ilorin</p>
+    </div>
+  </div>
+  
+  <div class="mt-[1.56rem] rounded-[3.13rem] bg-[#FFFFFF80] w-[31.94rem] h-[4.88rem] px-[0.63rem] pt-[0.63rem] pb-[1.25rem] gap-3 relative ml-[45rem]">
+    <input type="text"  name="email" class=" my-[0.79rem] border-none outline-none ml-[1.69rem] text-xl font-normal bg-transparent  text-white " placeholder= "Enter your Email" required />
+    <button class="bg-[#537BE1] rounded-[5.63rem] w-[10.44rem] h-[4.38rem]  absolute top-[0.25rem] left-[20.44rem] pr-[1.05rem] text-white">Report Now</button>
+  </div>
+  <section class="text-[#FFFFFF] ml-[5.63rem] mt-[3.19rem] w-[65.75rem] h[2.44rem] flex font-[400] text-[0.75rem]">
+    <p class="">Speak up</p>
+    <p class="ml-[19.38rem] leading-3 mt-[0.15rem]">Copyright © 2020-2024, Speak Up,All rights reserved.</p>
+  </section>
+</section>
+
+<!-- footer mobile view -->
+<section class="bg-[#022253] h-[590px] mt-[45px] mx-[0] lg:hidden">
+  <div class="flex">
+
+    <div class="">
+  
+      <div>
+        <div class="ml-[37px] pt-[44px] w-[98px] h-[20px]"><img src="images/footerlogo.svg" alt="Speakup-logo"></div>
+        <p class="text-[#FFFFFF] mt-[30px] ml-[37px] font-[400] text-[8px] w-[171px]">Your safe Haven for Reporting Incidents of Sexual and Gender-Based Violence</p>
+      </div>
+      <!-- tweeter div -->
+      <div>
+        <div class="mt-[32px] ml-[30px] flex">
+          <div class="bg-[#FFFFFF] w-[20px] h-[20px] rounded-[300px] ml-[8px]">
+            <a target="_blank" href="https://x.com/webfalainitiat1"><img src="images/X.svg" alt="X-logo"></a>
+          </div>
+          <div class="bg-[#FFFFFF] w-[20px] h-[20px] rounded-[300px] ml-[8px]">
+            <a target="_blank" href="https://www.facebook.com/webfalainitiative?mibextid=LQQJ4d"><img src="images/fb.svg" alt="Facebook-logo"></a>
+          </div>
+          <div class="bg-[#FFFFFF] w-[20px] h-[20px] rounded-[300px] ml-[8px]">
+            <a target="_blank" href="https://whatsapp.com/channel/0029Va918fSJJhzTUTdFsp1q"><img src="images/whatsapp.svg" alt="whatsapp-logo"></a>
+          </div>
+          <div class="bg-[#FFFFFF] w-[20px] h-[20px] rounded-[300px] ml-[8px]">
+            <a target="_blank" href="https://www.instagram.com/webfalainitiative?igsh=MzRIODBiNWFIZA=="><img src="images/instagram.svg" alt=""></a>
+          </div>
+        </div>
+        <div class="ml-[30px] mt-[47px]">
+          <h2 class="text-[#FFFFFF] font-[400] text-[12px] w-[161px] leading-6">Phone Number</h2>
+          <div class="text-[#FFFFFF] mt-[5px] text-[8px] w-[142px] font-[400] leading-6">
+            <p>+2347032758203, +2348143869939 </p>
+            <p>+2349020049105, +2347014604111 </p>
+          </div>
+        </div>
+        <div class="ml-[30px] mt-[24px]">
+          <p class="text-[#FFFFFF] font-[400] text-[14px] leading-6 mx-[10px] my-[10px]">Address</p>
+          <p class="mt-[] font-[400] text-[10px] leading-6 text-[#FFFFFF] ">The City of Refugee; No 14, Station <br>Road, Along Royalton Hotel, GRA, Ilorin</p>
+        </div>
+      </div>
+     </div>
+<!-- company div -->
+     <div class="ml-[72px] mt-[44px] h-[110px] w-[54px] mr-[41px] ">
+      <p class="text-[#FFFFFF] font-[400] text-[12px]  w-[54px] leading-6">Company</p>
+      <ul class="text-[#FFFFFF] font-[400] text-[8px] leading-7 mt-[0.94rem]">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      </div>
+  </div>
+
+ 
+<div class="mt-[49px] rounded-[47.01px] bg-[#FFFFFF80] w-[299px] h-[43.25px] px-[9.4px] py-[9.4px]  gap-[9px] relative ml-[38px] mr-[38px]">
+    <input type="text"  name="email" class="border-none outline-none ml-[32.91px] px-[14.63px] text-[11.28px] font-normal bg-transparent  text-white " placeholder= "Enter your Email" required />
+    <button class="bg-[#537BE1]  rounded-[84.62px] absolute top-2 text-[12px] w-[80px] h-[33px] py-[2px] text-white ">Report Now </button>
+  </div>
+
+  
+  <section class="text-[#FFFFFF] ml-[48px] mt-[64.7px] mr-[41px] flex font-[400] text-[]">
+    <p class="text-[10.76px] inline w-[7rem]"> Speak up</p>
+    <p class="mt-[0.2rem] text-[7px] w-[290px] inline">Copyright © 2020-2024, Speak Up,All rights reserved.</p>
+  </section>
+  
+
+       
+
+   
+  
+  
+</section>
+ </main> 
+ 
+ <script>
+  function showAlert() { alert('Report submitted successfully! Thank you for Bravely coming forward. Your Courage helps us work towards creating safer communities for all. If you require immediate assistance or support, please refer to resources listed on our website or contact emergency services.');
+  }
+
+  // Show/hide 'Other' input based on violence type selection
+  const violenceTypeSelect = document.getElementById('violenceType');
+  const otherViolenceInput = document.getElementById('otherViolenceTypeInput');
+
+  violenceTypeSelect.addEventListener('change', () => {
+    otherViolenceInput.classList.toggle('hidden', violenceTypeSelect.value !== 'other');
+  });
+</script>
+<script src="script.js"></script>
+</body>
+</html>
