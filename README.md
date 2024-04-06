@@ -15,4 +15,4 @@ This project showcases a web-based platform that provides a safe and confidentia
 
 ![Rukayya Abdulkadir](https://github.com/webfalaInitiative/Group4/assets/118520344/38b02876-0726-4f6e-a364-592e7f0fd0e8)
 
-Rukayya Abdulkadir (Software Developer)
+Rukayya Abdulkadir (Software Development)
